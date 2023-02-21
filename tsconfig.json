@@ -3,15 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "isolatedModules": true,
-    "target": "esnext",
-    "paths": {
-      "@example/*": [
-        "./*"
-      ],
-      "public/*": [
-        "./public/*"
-      ]
-    }
+    "target": "esnext"
   },
   "include": [
     "next-env.d.ts",
