@@ -22,7 +22,7 @@ const nextConfig = {
     '@astral/form',
     '@astral/validations',
     'lodash-es',
-    '@common',
+    '@example/common',
   ],
   images: {
     // При export static оптимизация не работает

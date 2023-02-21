@@ -1,4 +1,4 @@
-import { apiHttpClient } from '@example/shared';
+import { apiHttpClient } from '@admin/shared';
 
 import {
   CreateDraftRequestNetworkInputDTO,

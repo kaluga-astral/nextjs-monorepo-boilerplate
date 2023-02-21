@@ -18,6 +18,7 @@
   "peerDependencies": {
     "next": "*",
     "mobx": "*",
+    "mobx-react-lite": "*",
     "@sentry/nextjs": "*",
     "react": "*",
     "react-dom": "*"

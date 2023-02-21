@@ -1,7 +1,4 @@
-import {
-  QueryClient,
-  queryClient as queryClientInstance,
-} from '@example/shared';
+import { QueryClient, queryClient as queryClientInstance } from '@admin/shared';
 
 import { RepositoryCachedQueryParams } from '../../types';
 import {

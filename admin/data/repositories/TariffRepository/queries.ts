@@ -1,4 +1,4 @@
-import { UseQueryOptions, useQuery } from '@example/shared';
+import { UseQueryOptions, useQuery } from '@admin/shared';
 
 import { tariffRepository } from './TariffRepository';
 import { TariffRepositoryDTO } from './dto';

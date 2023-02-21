@@ -1,3 +1,3 @@
-const { createNextjsConfig } = require('@common/next.config');
+const { createNextjsConfig } = require('@example/common/next.config');
 
 module.exports = createNextjsConfig();
