@@ -1,8 +1,20 @@
 module.exports = {
-  '**/*.{js,jsx,ts,tsx}': [
-    'npm run lint',
+  'admin/**/*.{js,jsx,ts,tsx}': [
+    'npm run lint --workspace=@example/admin',
+    () => 'npm run lint:types --workspace=@example/admin',
     () => 'yaspeller --only-errors',
-    () => 'npm run lint:types',
   ],
-  '**/styles.ts': ['npm run lint:styles'],
+  'admin/**/styles.{js,jsx,ts,tsx}': [
+    'npm run lint:styles --workspace=@example/admin',
+  ],
+  'common/**/*.{js,jsx,ts,tsx}': [
+    'npm run lint --workspace=@example/common',
+    'npm run lint:styles --workspace=@example/common',
+    () => 'npm run lint:types --workspace=@example/admin',
+    () => 'npm run lint:types --workspace=@example/common',
+    () => 'yaspeller --only-errors',
+  ],
+  'common/**/styles.{js,jsx,ts,tsx}': [
+    'npm run lint:styles --workspace=@example/common',
+  ],
 };
