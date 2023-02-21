@@ -28,8 +28,6 @@
   "devDependencies": {
     "eslint-plugin-mobx": "0.0.9",
     "@astral/eslint-config-react-ts": "^1.6.2",
-    "@astral/prettier-config": "^1.6.2",
-    "@astral/stylelint-config-styled": "^1.6.2",
     "@vitejs/plugin-react": "^3.1.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",

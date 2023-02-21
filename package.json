@@ -19,10 +19,12 @@
   "devDependencies": {
     "eslint": "^8.22.0",
     "prettier": "^2.7.1",
+    "@astral/prettier-config": "^1.6.2",
     "commitlint": "^17.1.2",
     "@astral/commitlint-config": "^1.6.2",
     "lint-staged": "^11.1.2",
     "stylelint": "^14.11.0",
+    "@astral/stylelint-config-styled": "^1.6.2",
     "vitest": "^0.28.4",
     "husky": "^8.0.3",
     "yaspeller": "^8.0.1",
