@@ -1,1 +1,1 @@
-export * from '@admin/common/_tests';
+export * from '@example/common/shared/_tests';

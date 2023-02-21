@@ -1,1 +1,1 @@
-export * from '@example/common';
+export * from '@example/common/shared';

@@ -25,6 +25,7 @@
     "stylelint": "^14.11.0",
     "vitest": "^0.28.4",
     "husky": "^8.0.3",
-    "yaspeller": "^8.0.1"
+    "yaspeller": "^8.0.1",
+    "jsdom": "^20.0.3"
   }
 }

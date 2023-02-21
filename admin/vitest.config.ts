@@ -1,3 +1,3 @@
-import { createConfig } from '@example/common/vitest.config';
+import { createConfig } from '../common/vitest.config';
 
 export default createConfig();
