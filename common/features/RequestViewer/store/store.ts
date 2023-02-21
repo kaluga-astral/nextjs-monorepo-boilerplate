@@ -1,5 +1,4 @@
 import { makeAutoObservable } from 'mobx';
-
 import { RequestRepositoryDTO } from '@example/data';
 
 export type RequestViewModel = {

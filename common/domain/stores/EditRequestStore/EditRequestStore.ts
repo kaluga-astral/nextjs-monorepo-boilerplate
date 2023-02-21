@@ -1,5 +1,4 @@
 import { makeAutoObservable, runInAction } from 'mobx';
-
 import { AsyncState, AsyncStateStore } from '@example/shared';
 import {
   RequestRepository,

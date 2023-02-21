@@ -1,9 +1,7 @@
 {
   "name": "@example/common",
+  "sideEffects": false,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
     "lint:types": "tsc --noEmit",
     "lint": "eslint --fix --quiet",
     "lint:all": "eslint \"**/*.{ts,tsx}\" --fix --quiet",
@@ -39,5 +37,12 @@
     "eslint-plugin-testing-library": "^5.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "vite-tsconfig-paths": "^4.0.5"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "mobx": "*",
+    "@sentry/nextjs": "*",
+    "react": "*",
+    "react-dom": "*"
   }
 }

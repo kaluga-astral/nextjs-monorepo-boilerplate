@@ -2,14 +2,13 @@ import {
   QueryClient,
   queryClient as queryClientInstance,
 } from '../../../shared';
-
 import { RepositoryCachedQueryParams } from '../../types';
 
-import {UserRepositoryDTO } from './dto';
+import { UserRepositoryDTO } from './dto';
 
 type UserSources = {
   getContactInfo: () => Promise<UserRepositoryDTO.UserContactDTO>;
-  getPersonInfo: () =>  Promise<UserRepositoryDTO.UserPersonDTO>;
+  getPersonInfo: () => Promise<UserRepositoryDTO.UserPersonDTO>;
 };
 
 /**
@@ -65,7 +64,5 @@ export class UserRepository {
     );
 }
 
-export const createUserRepository = (userSources: UserSources) => new UserRepository(
-    userSources,
-  queryClientInstance,
-);
+export const createUserRepository = (userSources: UserSources) =>
+  new UserRepository(userSources, queryClientInstance);

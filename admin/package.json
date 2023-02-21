@@ -14,5 +14,12 @@
   },
   "dependencies": {
     "@example/common": "*"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "mobx": "*",
+    "@sentry/nextjs": "*",
+    "react": "*",
+    "react-dom": "*"
   }
 }

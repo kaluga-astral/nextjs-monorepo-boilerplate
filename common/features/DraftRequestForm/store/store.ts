@@ -1,5 +1,4 @@
 import { makeAutoObservable } from 'mobx';
-
 import { validationService } from '@example/shared';
 
 import { TariffFormAutocompleteValue } from '../../TariffFormAutocomplete';

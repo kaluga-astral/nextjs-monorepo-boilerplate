@@ -1,7 +1,6 @@
 import { Suspense, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { observer } from 'mobx-react-lite';
-
 import {
   ContentState,
   FormProvider,

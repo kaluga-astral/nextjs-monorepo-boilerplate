@@ -9,11 +9,12 @@ import { defineConfig } from 'vitest/config';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: path.resolve(__dirname, 'vitest.setup.js'),
-  },
-});
+export const createConfig = () =>
+  defineConfig({
+    plugins: [react(), tsconfigPaths()],
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      setupFiles: path.resolve(__dirname, 'vitest.setup.js'),
+    },
+  });

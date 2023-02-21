@@ -1,5 +1,4 @@
 import { makeAutoObservable } from 'mobx';
-
 import { notify } from '@example/shared';
 import { TariffRepositoryDTO } from '@example/data';
 

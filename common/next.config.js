@@ -39,14 +39,15 @@ const nextConfig = {
   },
 };
 
-const createNextjsConfig = () => withSentryConfig(
-  withSvgr({
-    ...nextConfig,
-    sentry: {
-      hideSourceMaps: true,
-      autoInstrumentServerFunctions: true,
-    },
-  }),
-);
+const createNextjsConfig = () =>
+  withSentryConfig(
+    withSvgr({
+      ...nextConfig,
+      sentry: {
+        hideSourceMaps: true,
+        autoInstrumentServerFunctions: true,
+      },
+    }),
+  );
 
-module.exports = {createNextjsConfig };
+module.exports = { createNextjsConfig };

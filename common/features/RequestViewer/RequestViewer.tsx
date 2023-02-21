@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import { ContentState, Description } from '@example/shared';
 import { useRequestWithTariffQuery } from '@example/data';
 

@@ -22,4 +22,5 @@ export class ConfigService<Config extends object> {
   }
 }
 
-export const createConfigService = <Config extends object>() => new ConfigService<Config>();
+export const createConfigService = <Config extends object>() =>
+  new ConfigService<Config>();

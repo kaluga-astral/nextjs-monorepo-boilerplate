@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-
 import { renderWithTheme, screen } from '@example/shared/_tests';
 
 import { RequestBtn } from './RequestBtn';

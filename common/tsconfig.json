@@ -1,3 +1,16 @@
 {
-  "extends": "../tsconfig.json"
+  "extends": "@tsconfig/next/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "isolatedModules": true,
+    "target": "esnext"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "./*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
