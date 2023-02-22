@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app';
 import { useEffect } from 'react';
 
-import { authStore } from '@admin/modules/AuthModule';
 import { MainLayout } from '@admin/modules/LayoutModule';
+import { authStore } from '@admin/modules/AuthModule';
 import {
   DefaultApp,
   apiHttpClient,

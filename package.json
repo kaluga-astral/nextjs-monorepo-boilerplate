@@ -5,6 +5,9 @@
     "common/*",
     "main"
   ],
+  "scripts": {
+    "lint:all": "npm run lint:all --workspaces --if-present"
+  },
   "dependencies": {
     "typescript": "^4.9.5",
     "react": "^18.2.0",

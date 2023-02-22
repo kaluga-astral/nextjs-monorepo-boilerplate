@@ -1,1 +1,1 @@
-export { AuthStore, authStore } from './domain';
+export { getUserFullName, authStore } from './domain';

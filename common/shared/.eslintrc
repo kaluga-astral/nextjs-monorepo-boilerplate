@@ -48,15 +48,15 @@
     },
     // Ниже определены правила, которые устанавливают архитектурные границы (запрещают импорты из директорий)
     {
-      "files": "shared/**/*.+(ts|tsx)",
+      "files": "**/shared/**/*.+(ts|tsx)",
       "rules": {
         "no-restricted-imports": [
           "error",
           {
             "patterns": [
               {
-                "group": ["@example/data", "@example/modules", "@example/screens"],
-                "message": "Shared не должен зависеть от: data, modules, screens"
+                "group": ["**/data", "**/modules", "**/screens", "**/features", "**/domain"],
+                "message": "Shared не должен зависеть от: data, modules, screens, features, domain"
               }
             ]
           }
@@ -71,7 +71,7 @@
           {
             "patterns": [
               {
-                "group": ["@example/data", "@example/modules"],
+                "group": ["**/data", "**/modules"],
                 "message": "Pages не зависит от: data и modules"
               }
             ]
@@ -80,7 +80,7 @@
       }
     },
     {
-      "files": "+(modules|screens|pages)/**/*.+(ts|tsx)",
+      "files": "+(modules|screens|pages|data|features|domain)/**/*.+(ts|tsx)",
       "rules": {
         "no-restricted-imports": [
           "error",

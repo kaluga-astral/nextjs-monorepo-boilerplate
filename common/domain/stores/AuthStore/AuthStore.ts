@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 
-import { HttpService, UNAUTHORIZED_HTTP_CODE } from '@admin/shared';
+import { HttpService, UNAUTHORIZED_HTTP_CODE } from '@common/shared';
 
 export class AuthStore {
   public isAuthored: boolean = false;

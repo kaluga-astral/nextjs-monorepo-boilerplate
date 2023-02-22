@@ -15,7 +15,8 @@
   "dependencies": {
     "@common/shared": "*",
     "@common/data": "*",
-    "@common/modules": "*"
+    "@common/domain": "*",
+    "@common/features": "*"
   },
   "peerDependencies": {
     "next": "*",

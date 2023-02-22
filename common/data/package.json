@@ -11,7 +11,8 @@
     "tests:ci": "vitest run --reporter=junit --outputFile.junit=junit.xml"
   },
   "dependencies": {
-    "@common/shared": "*"
+    "@common/shared": "*",
+    "@astral/ui": "*"
   },
   "peerDependencies": {
     "next": "*",

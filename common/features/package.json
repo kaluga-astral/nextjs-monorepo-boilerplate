@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@common/data": "*",
-    "@common/shared": "*"
+    "@common/shared": "*",
+    "@common/domain": "*"
   },
   "peerDependencies": {
     "next": "*",
