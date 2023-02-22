@@ -3,5 +3,5 @@ const { createConfig } = require('@astral/commitlint-config');
 
 module.exports = createConfig({
   ticketPrefix: 'NJBPL',
-  scopes: ['admin', 'common'],
+  scopes: ['admin', 'main', 'common'],
 });
