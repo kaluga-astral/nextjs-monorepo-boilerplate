@@ -9,12 +9,21 @@ import {
   configService,
   initApiHttpClient,
 } from '@admin/shared';
+import { initRepositories } from '@admin/data';
 
-configService.init({
-  apiUrl: process.env.NEXT_PUBLIC_API_URL as string,
-});
+/**
+ * @description Функция инициализации глобальных сервисов приложения
+ * */
+const initApp = () => {
+  configService.init({
+    apiUrl: process.env.NEXT_PUBLIC_API_URL as string,
+  });
 
-initApiHttpClient(configService.config.apiUrl);
+  initApiHttpClient(configService.config.apiUrl);
+  initRepositories();
+};
+
+initApp();
 
 export const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {

@@ -16,12 +16,22 @@ type TariffSources = {
 export class TariffRepository {
   private readonly tariffsCacheID = 'tariffsCacheID';
 
-  constructor(
-    private readonly tariffSources: TariffSources,
-    private readonly queryClient: QueryClient,
-  ) {
-    this.tariffSources = tariffSources;
+  #tariffSources?: TariffSources;
+
+  constructor(private readonly queryClient: QueryClient) {
     this.queryClient = queryClient;
+  }
+
+  get tariffSources() {
+    if (this.#tariffSources) {
+      return this.#tariffSources;
+    }
+
+    throw Error('TariffRepository is not initialized');
+  }
+
+  public init(tariffSources: TariffSources) {
+    this.#tariffSources = tariffSources;
   }
 
   public getTariffsCacheKey = () => [this.tariffsCacheID];
@@ -37,5 +47,4 @@ export class TariffRepository {
     );
 }
 
-export const createTariffRepository = (tariffSources: TariffSources) =>
-  new TariffRepository(tariffSources, queryClientInstance);
+export const tariffRepository = new TariffRepository(queryClientInstance);

@@ -18,7 +18,7 @@ import {
   TariffRepository,
   TariffRepositoryDTO,
   tariffRepository as tariffRepositoryInstance,
-} from '../TariffRepository';
+} from '../external';
 
 import { RequestRepositoryDTO } from './dto';
 

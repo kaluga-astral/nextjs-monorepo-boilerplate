@@ -4,7 +4,7 @@ import {
   OwnerNetworkDTO,
   RequestNetworkDTO,
 } from '../../sources';
-import { TariffRepositoryDTO } from '../TariffRepository';
+import { TariffRepositoryDTO } from '../external';
 
 import { RequestStatus } from './enums';
 
