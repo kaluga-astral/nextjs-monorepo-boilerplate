@@ -1,3 +1,4 @@
+import { ReactChild } from 'react';
 import { UseQueryOptions, useQuery } from '@admin/shared';
 
 import { userRepository } from './UserRepository';

@@ -1,9 +1,7 @@
 {
-  "name": "@example/admin",
+  "name": "@common/modules",
+  "sideEffects": false,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
     "lint:types": "tsc --noEmit",
     "lint": "eslint --fix --quiet",
     "lint:all": "eslint \"**/*.{ts,tsx}\" --fix --quiet",
@@ -13,9 +11,8 @@
     "tests:ci": "vitest run --reporter=junit --outputFile.junit=junit.xml"
   },
   "dependencies": {
-    "@common/shared": "*",
     "@common/data": "*",
-    "@common/modules": "*"
+    "@common/shared": "*"
   },
   "peerDependencies": {
     "next": "*",

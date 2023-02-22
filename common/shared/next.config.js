@@ -1,6 +1,10 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 const withSvgr = require('@newhighsco/next-plugin-svgr');
 
+const { NODE_ENV } = process.env;
+
+const IS_DEVELOPMENT = NODE_ENV === 'development';
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -22,7 +26,9 @@ const nextConfig = {
     '@astral/form',
     '@astral/validations',
     'lodash-es',
-    '@example/common',
+    '@common/shared',
+    '@common/data',
+    '@common/modules',
   ],
   images: {
     // При export static оптимизация не работает
@@ -39,15 +45,20 @@ const nextConfig = {
   },
 };
 
-const createNextjsConfig = () =>
-  withSentryConfig(
-    withSvgr({
-      ...nextConfig,
+const createNextjsConfig = () => {
+  const config = withSvgr(nextConfig);
+
+  if (!IS_DEVELOPMENT) {
+    return withSentryConfig({
+      ...config,
       sentry: {
         hideSourceMaps: true,
         autoInstrumentServerFunctions: true,
       },
-    }),
-  );
+    });
+  }
+
+  return config;
+};
 
 module.exports = { createNextjsConfig };

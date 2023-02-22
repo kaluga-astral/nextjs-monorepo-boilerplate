@@ -1,5 +1,5 @@
 {
-  "name": "@example/common",
+  "name": "@common/shared",
   "sideEffects": false,
   "scripts": {
     "lint:types": "tsc --noEmit",

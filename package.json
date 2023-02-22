@@ -1,12 +1,10 @@
 {
-  "name": "@astral/nextjs-boilerplate",
+  "name": "@astral/nextjs-monorepo-boilerplate",
   "workspaces": [
     "admin",
-    "common",
+    "common/*",
     "main"
   ],
-  "scripts": {
-  },
   "dependencies": {
     "typescript": "^4.9.5",
     "react": "^18.2.0",

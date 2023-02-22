@@ -1,4 +1,4 @@
-import { createConfigService } from '@example/common/shared';
+import { createConfigService } from '@common/shared';
 
 export type Config = {
   apiUrl: string;
