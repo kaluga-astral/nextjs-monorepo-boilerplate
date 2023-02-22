@@ -6,7 +6,9 @@
     "main"
   ],
   "scripts": {
-    "lint:all": "npm run lint:all --workspaces --if-present"
+    "lint:all": "npm run lint:all --workspaces --if-present",
+    "tests:all": "npm run tests --workspaces --if-present",
+    "tests:ci:all": "npm run tests:ci --workspaces --if-present"
   },
   "dependencies": {
     "typescript": "^4.9.5",

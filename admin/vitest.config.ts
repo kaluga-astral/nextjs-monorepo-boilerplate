@@ -1,3 +1,3 @@
-import { createConfig } from '../common/shared/vitest.config';
+import { createConfig } from '../common/shared/vitest.common.config';
 
 export default createConfig();
