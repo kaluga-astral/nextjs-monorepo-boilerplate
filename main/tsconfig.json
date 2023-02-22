@@ -1,0 +1,21 @@
+{
+  "extends": "../common/shared/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@admin/*": [
+        "./*"
+      ],
+      "public/*": [
+        "./public/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "./*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

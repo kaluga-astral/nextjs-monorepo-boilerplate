@@ -5,6 +5,7 @@ module.exports = {
   // common
   'common/**/*.{ts,tsx}': [
     () => 'npm run lint:types --workspace=@example/admin',
+    () => 'npm run lint:types --workspace=@example/main',
   ],
 
   // admin
@@ -15,6 +16,13 @@ module.exports = {
   'admin/**/styles.{ts,tsx}': [
     'npm run lint:styles --workspace=@example/admin',
   ],
+
+  // main
+  'main/**/*.{js,jsx,ts,tsx}': [
+    'npm run lint --workspace=@example/main',
+    () => 'npm run lint:types --workspace=@example/main',
+  ],
+  'main/**/styles.{ts,tsx}': ['npm run lint:styles --workspace=@example/main'],
 
   // shared
   'common/shared/**/*.{js,jsx,ts,tsx}': [
