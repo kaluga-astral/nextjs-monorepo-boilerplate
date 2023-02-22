@@ -94,6 +94,56 @@
           }
         ]
       }
+    },
+    {
+      "files": "modules/**/*.+(ts|tsx)",
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@common/data", "@common/shared"],
+                "message": "@common/data|shared должны реэкспортироваться через соответсвующий слой приложения"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": "data/**/*.+(ts|tsx)",
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@common/domain", "@common/shared", "@common/features"],
+                "message": "Data слой не должен зависеть от @common/domain|shared|features"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": "shared/**/*.+(ts|tsx)",
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@common/domain", "@common/features", "@common/data"],
+                "message": "Shared слой не должен зависеть от @common/domain|data|features"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
+
+
