@@ -3,7 +3,7 @@ module.exports = {
   '**/*.{ts,tsx}': [() => 'yaspeller --only-errors'],
 
   // common
-  'common/**/*.{js,jsx,ts,tsx}': [
+  'common/**/*.{ts,tsx}': [
     () => 'npm run lint:types --workspace=@example/admin',
   ],
 
