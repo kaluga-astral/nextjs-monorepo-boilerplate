@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { FormAutocomplete, FormAutocompleteProps } from '../../shared';
-import { useTariffsQuery } from '../../data';
+import { FormAutocomplete, FormAutocompleteProps } from '@common/shared';
+import { useTariffsQuery } from '@common/data';
 
 import {
   TariffFormAutocompleteValue,

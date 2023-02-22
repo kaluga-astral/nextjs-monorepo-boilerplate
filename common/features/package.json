@@ -1,5 +1,5 @@
 {
-  "name": "@common/modules",
+  "name": "@common/features",
   "sideEffects": false,
   "scripts": {
     "lint:types": "tsc --noEmit",

@@ -1,7 +1,7 @@
 import { makeAutoObservable } from 'mobx';
 
-import { notify } from '../../../shared';
-import { TariffRepositoryDTO } from '../../../data';
+import { notify } from '@common/shared';
+import { TariffRepositoryDTO } from '@common/data';
 
 export type TariffFormAutocompleteValue = Pick<
   TariffRepositoryDTO.TariffDTO,
