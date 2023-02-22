@@ -11,7 +11,7 @@
     "tests:ci": "vitest run --reporter=junit --outputFile.junit=junit.xml"
   },
   "dependencies": {
-    "@astral/ui": "^2.8.0",
+    "@astral/ui": "^2.12.1",
     "nextjs-progressbar": "0.0.16",
     "react-use": "^17.4.0",
     "query-string": "^8.1.0",
