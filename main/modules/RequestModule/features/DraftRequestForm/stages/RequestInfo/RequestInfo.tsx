@@ -4,7 +4,7 @@ import {
   formatPriceToView,
   useFormContext,
   useFormWatch,
-} from '@admin/shared';
+} from '@main/shared';
 
 import { RequestInfoStageValues } from '../../store';
 

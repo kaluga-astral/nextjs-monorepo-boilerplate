@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 
-import { RequestRepositoryDTO } from '@admin/data';
+import { RequestRepositoryDTO } from '@main/data';
 
 export type RequestViewModel = {
   description: string;

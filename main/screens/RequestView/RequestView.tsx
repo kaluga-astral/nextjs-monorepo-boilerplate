@@ -1,4 +1,4 @@
-import { RequestViewer } from '@admin/modules/RequestModule';
+import { RequestViewer } from '@main/modules/RequestModule';
 
 export type RequestViewProps = { requestID: string };
 

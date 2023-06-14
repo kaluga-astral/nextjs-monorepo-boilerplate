@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { observer } from 'mobx-react-lite';
 
-import { APP_ROUTES, PageLayout, router } from '@admin/shared';
-import { useRequestWithTariffQuery } from '@admin/data';
+import { APP_ROUTES, PageLayout, router } from '@main/shared';
+import { useRequestWithTariffQuery } from '@main/data';
 import {
   DraftRequestForm,
   createEditRequestDraftStore,
-} from '@admin/modules/RequestModule';
+} from '@main/modules/RequestModule';
 
 import { EditDraftContentState } from './ContentState';
 

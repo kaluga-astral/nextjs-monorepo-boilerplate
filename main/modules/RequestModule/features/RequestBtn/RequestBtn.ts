@@ -1,1 +1,1 @@
-export { Button as RequestBtn } from '@admin/shared';
+export { Button as RequestBtn } from '@main/shared';

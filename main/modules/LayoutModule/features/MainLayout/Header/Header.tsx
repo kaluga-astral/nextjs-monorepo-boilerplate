@@ -12,8 +12,8 @@ import {
   MenuItem,
   ProfileOutlineMd,
   QuitOutlineMd,
-} from '@admin/shared';
-import { useUserFullInfoQuery } from '@admin/data';
+} from '@main/shared';
+import { useUserFullInfoQuery } from '@main/data';
 
 import { createHeaderStore } from './store';
 

@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
-import { useRouter } from '@admin/shared';
-import { AccessDeniedScreen, EditDraftRequestScreen } from '@admin/screens';
+import { useRouter } from '@main/shared';
+import { AccessDeniedScreen, EditDraftRequestScreen } from '@main/screens';
 
 export const EditDraftRequestPage: NextPage = () => {
   const router = useRouter();

@@ -1,4 +1,4 @@
-import { createQueryClient, localStorageService } from '@admin/shared';
+import { createQueryClient, localStorageService } from '@main/shared';
 
 import { RequestRepository } from './RequestRepository';
 

@@ -3,7 +3,7 @@ import {
   QueryClient,
   localStorageService,
   queryClient as queryClientInstance,
-} from '@admin/shared';
+} from '@main/shared';
 
 import { RepositoryCachedQueryParams } from '../../types';
 import {

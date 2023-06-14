@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 
-import { UserRepositoryDTO } from '@admin/data';
+import { UserRepositoryDTO } from '@main/data';
 
 type UserViewModel = {
   displayName: string;

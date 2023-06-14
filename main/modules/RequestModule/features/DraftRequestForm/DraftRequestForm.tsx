@@ -7,7 +7,7 @@ import {
   FormProvider,
   FormSubmitButton,
   useForm,
-} from '@admin/shared';
+} from '@main/shared';
 
 import { TariffStage } from './stages/Tariff';
 import { DraftRequestFormValues, createDraftRequestFormStore } from './store';

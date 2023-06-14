@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { ContentState, Description } from '@admin/shared';
-import { useRequestWithTariffQuery } from '@admin/data';
+import { ContentState, Description } from '@main/shared';
+import { useRequestWithTariffQuery } from '@main/data';
 
 import { createRequestViewerStore } from './store';
 

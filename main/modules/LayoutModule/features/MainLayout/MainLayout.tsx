@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { DashboardLayout } from '@admin/shared';
+import { DashboardLayout } from '@main/shared';
 
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';

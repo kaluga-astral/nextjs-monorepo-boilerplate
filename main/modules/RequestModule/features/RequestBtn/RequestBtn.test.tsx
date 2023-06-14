@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import { renderWithTheme, screen } from '@admin/shared/_tests';
+import { renderWithTheme, screen } from '@main/shared/_tests';
 
 import { RequestBtn } from './RequestBtn';
 

@@ -4,7 +4,7 @@ import {
   PlayIcon,
   RouterLink,
   useRouter,
-} from '@admin/shared';
+} from '@main/shared';
 
 export const Sidebar = () => {
   const { pathname } = useRouter();
