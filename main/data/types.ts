@@ -1,4 +1,4 @@
-import { QueryFetchPolicy } from '@admin/shared';
+import { QueryFetchPolicy } from '@main/shared';
 
 export type RepositoryCachedQueryParams = { fetchPolicy?: QueryFetchPolicy };
 

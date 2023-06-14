@@ -1,4 +1,4 @@
-import { UseQueryOptions, useQuery } from '@admin/shared';
+import { UseQueryOptions, useQuery } from '@main/shared';
 
 import { requestRepository } from './RequestRepository';
 import { RequestRepositoryDTO } from './dto';

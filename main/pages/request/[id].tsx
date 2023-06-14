@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
-import { useRouter } from '@admin/shared';
-import { AccessDeniedScreen, RequestViewScreen } from '@admin/screens';
+import { useRouter } from '@main/shared';
+import { AccessDeniedScreen, RequestViewScreen } from '@main/screens';
 
 export const RequestPage: NextPage = () => {
   const router = useRouter();

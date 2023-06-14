@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import { APP_ROUTES, PageLayout, router } from '@admin/shared';
+import { APP_ROUTES, PageLayout, router } from '@main/shared';
 import {
   DraftRequestForm,
   createDraftRequestStore,
-} from '@admin/modules/RequestModule';
+} from '@main/modules/RequestModule';
 
 import { CreateDraftContentState } from './ContentState';
 

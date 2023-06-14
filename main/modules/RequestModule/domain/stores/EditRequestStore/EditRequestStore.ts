@@ -1,13 +1,13 @@
 import { makeAutoObservable, runInAction } from 'mobx';
 
-import { AsyncState, AsyncStateStore } from '@admin/shared';
+import { AsyncState, AsyncStateStore } from '@main/shared';
 import {
   RequestRepository,
   TariffRepository,
   TariffRepositoryDTO,
   requestRepository as requestRepositoryInstance,
   tariffRepository as tariffRepositoryInstance,
-} from '@admin/data';
+} from '@main/data';
 
 import { DraftRequestFormValues } from '../../../features';
 

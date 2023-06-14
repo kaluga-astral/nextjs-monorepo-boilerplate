@@ -4,7 +4,7 @@ import type { ErrorProps } from 'next/error';
 import NextErrorComponent from 'next/error';
 import errorPlaceholderImg from 'public/images/error-placeholder.png';
 
-import { Placeholder } from '@admin/shared';
+import { Placeholder } from '@main/shared';
 
 export const ErrorPage: NextPage<ErrorProps> = () => {
   return (

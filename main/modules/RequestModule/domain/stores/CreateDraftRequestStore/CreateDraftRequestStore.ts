@@ -3,7 +3,7 @@ import { makeAutoObservable, runInAction } from 'mobx';
 import {
   RequestRepository,
   requestRepository as requestRepositoryInstance,
-} from '@admin/data';
+} from '@main/data';
 
 import { DraftRequestFormValues } from '../../../features';
 

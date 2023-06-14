@@ -1,4 +1,4 @@
-import { useFormContext } from '@admin/shared';
+import { useFormContext } from '@main/shared';
 
 import { TariffFormAutocomplete } from '../../../TariffFormAutocomplete';
 import { TariffStageValues } from '../../store';

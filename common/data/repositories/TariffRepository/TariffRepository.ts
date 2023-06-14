@@ -42,7 +42,7 @@ export class TariffRepository {
   public getTariffs = async (params?: RepositoryCachedQueryParams) =>
     this.queryClient.fetchQuery<TariffRepositoryDTO.TariffListDTO>(
       this.getTariffsCacheKey(),
-      () => this.#tariffSources.getTariffs(),
+      () => this.tariffSources.getTariffs(),
       params,
     );
 }

@@ -1,7 +1,7 @@
 import disconnectionImgSrc from 'public/images/disconnection.svg';
 import { ReactNode } from 'react';
 
-import { ContentState } from '@admin/shared';
+import { ContentState } from '@main/shared';
 
 type ContentStateProps = {
   children: ReactNode;

@@ -1,4 +1,4 @@
-import { apiHttpClient } from '@admin/shared';
+import { apiHttpClient } from '@main/shared';
 
 import { TariffListNetworkDTO } from './dto';
 

@@ -1,15 +1,15 @@
 import { AppProps } from 'next/app';
 import { useEffect } from 'react';
 
-import { MainLayout } from '@admin/modules/LayoutModule';
-import { authStore } from '@admin/modules/AuthModule';
+import { MainLayout } from '@main/modules/LayoutModule';
+import { authStore } from '@main/modules/AuthModule';
 import {
   DefaultApp,
   apiHttpClient,
   configService,
   initApiHttpClient,
-} from '@admin/shared';
-import { initRepositories } from '@admin/data';
+} from '@main/shared';
+import { initRepositories } from '@main/data';
 
 /**
  * @description Функция инициализации глобальных сервисов приложения

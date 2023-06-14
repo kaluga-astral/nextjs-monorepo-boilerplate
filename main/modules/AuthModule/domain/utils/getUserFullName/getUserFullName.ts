@@ -1,4 +1,4 @@
-import { UserRepositoryDTO } from '@admin/data';
+import { UserRepositoryDTO } from '@main/data';
 
 export const getUserFullName = (
   user: Pick<UserRepositoryDTO.UserFullInfoDTO, 'name' | 'surname'>,

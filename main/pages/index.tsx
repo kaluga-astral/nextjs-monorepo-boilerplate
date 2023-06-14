@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-import { CreateDraftRequestScreen } from '@admin/screens';
+import { CreateDraftRequestScreen } from '@main/screens';
 
 export const IndexPage: NextPage = () => {
   return <CreateDraftRequestScreen />;
